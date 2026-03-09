@@ -10,5 +10,13 @@ string Status_lulus(float r){
         return "Lulus";
     else
         return "Gagal";
+}
 
+int main(){
+    float nilai1, nilai2, rata;
+
+    cout << "Masukkan nilai pertama: ";
+    cin >> nilai1;
+    cout << "Masukkan nilai kedua: ";
+    cin >> nilai2;
 }
