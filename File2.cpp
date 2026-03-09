@@ -20,3 +20,11 @@ int main(){
     cout << "Masukkan nilai kedua: ";
     cin >> nilai2;
 }
+
+//rerata = (nilai1 + nilai2)/2;
+//if (rerata >= 60)
+//status = "Lulus";
+//else
+//status = "Gagal";
+rerata = Rata_rata(nilai1, nilai2);
+//status = Status_lulus(rerata);
