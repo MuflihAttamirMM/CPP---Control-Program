@@ -7,24 +7,28 @@ float Rata_rata(float a, float b){
 
 string Status_lulus(float r){
     if (r >= 60)
-        return "Lulus";
+        return "Lolos";
     else
         return "Gagal";
 }
 
 int main(){
-    float nilai1, nilai2, rata;
+    float nilBI,nilMT,rerata;
+    string status;
 
-    cout << "Masukkan nilai pertama: ";
-    cin >> nilai1;
-    cout << "Masukkan nilai kedua: ";
-    cin >> nilai2;
+    cout <<"Masukkan nilai Bahasa Inggris = ";
+    cin >> nilBI;
+    cout <<"Masukkan nilai Matematika = ";
+    cin >> nilMT;
+
+    //rerata = (nilBI+nilMT)/2;
+    //if (rerata >= 60)
+    //    status = "Lolos";
+    //else
+    //    status = "Gagal";
+    rerata = Rata_rata(nilBI,nilMT);
+    //status = Status_lulus(rerata);
+
+    cout << "Status kelulusan = "<<Status_lulus(rerata)<<" ,dengan nilai rerata = "<<rerata<<endl;
+
 }
-
-//rerata = (nilai1 + nilai2)/2;
-//if (rerata >= 60)
-//status = "Lulus";
-//else
-//status = "Gagal";
-rerata = Rata_rata(nilai1, nilai2);
-//status = Status_lulus(rerata);
